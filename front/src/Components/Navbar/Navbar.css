@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: #F76C6C;
+  padding:15px 0;
+}
+
+.navbar img {
+    width: 35px;
+   filter:invert();
+}

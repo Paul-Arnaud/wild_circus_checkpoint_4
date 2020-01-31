@@ -1,0 +1,164 @@
+.spectacles,
+.details {
+  margin-bottom: 100px;
+}
+
+.spectacle-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border: 1px solid #f76c6c;
+  width: 90vw;
+  padding: 20px 0 0;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 4px 4px #f99797d4;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 90vw;
+  padding: 20px 0 0;
+}
+
+.details h2 {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.details .cover-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.details .cover-image img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px #f99797d4;
+  border: 1px solid #f76c6c;
+}
+
+.details .spectacle_description {
+  display: flex;
+  flex-direction: column;
+}
+
+.details .spectacle_description b {
+  margin: 10px 0;
+}
+
+.details .spectacles_images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.details .spectacles_images img {
+  width: 45%;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px #f99797d4;
+  border: 1px solid #f76c6c;
+}
+
+.details .spectacles_images::after {
+  content: "";
+  display: flex;
+  width: 62%;
+}
+
+.spectacle-card div {
+  margin: 0 auto;
+  padding: 0 0 10px;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.spectacle-card .img-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.spectacle-card div p {
+  text-align: left;
+  width: 90%;
+}
+
+.spectacle-card div button {
+  margin: 10px 0;
+  align-self: flex-end;
+}
+
+.spectacle-card .img-div img {
+  width: 100%;
+  max-height: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 4px 4px #f99797d4;
+  border: 1px solid #f76c6c;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.spectacles h1 {
+  position: initial;
+}
+
+.spectacle-card .info_spectacle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.spectacle-card .info_spectacle b {
+  margin: 5px 0;
+}
+
+#over, .over_img{
+  margin: 0;
+  position:fixed;
+  width:100vw;
+  z-index:2;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:#00000082;
+  display:none;
+}
+
+#popup_resa, .popup_img{
+  margin: 0;
+  position:fixed;
+  width:90vw;
+  z-index:2;
+  top:20vh;
+  display: none;
+}
+
+.details .spectacles_images .popup_img img{
+  width:100%;
+  height:auto;
+}

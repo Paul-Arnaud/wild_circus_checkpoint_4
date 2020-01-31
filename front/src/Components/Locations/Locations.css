@@ -1,0 +1,36 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+}
+
+.locations select {
+  width: 50vw;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.map {
+  width: 95vw;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 5%;
+  border: 1px solid #f76c6c;
+  box-shadow: 4px 4px #f5a3a3;
+}
+
+.map div {
+  margin: 0;
+  width: auto;
+  color: #f76c6c;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
+
+.map div .marker-text {
+  text-align: center;
+  width: 0;
+}
+
+.map div .mapboxgl-popup {
+  transform: translate(10%, 100%) !important;
+}

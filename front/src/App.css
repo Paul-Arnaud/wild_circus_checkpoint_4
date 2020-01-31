@@ -1,0 +1,31 @@
+* {
+    margin: 0 auto;
+    padding:0;
+    font-size :13px;
+}
+
+.btn-primary {
+    background-color: #f76c6c;
+    color: #fff;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:15px;
+    border: none;
+    padding:10px;
+    
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #f76c6c;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:15px;
+    border: 1px solid #f76c6c;
+    padding:10px;
+}
+
+button {
+    cursor:pointer;
+    box-shadow: 4px 4px #f99797d4;
+}

@@ -1,0 +1,37 @@
+.reservation {
+    border: 1px solid #f76c6c;
+    border-radius: 10px;
+    padding-bottom:20px;
+    background-color:white;
+}
+.form_resa {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:80vw;
+}
+
+.form_resa div {
+    margin: 0;
+    display:flex;
+}
+
+.form_resa  div input, .form_resa div select {
+    width:60vw;
+    align-self:flex-end;
+}
+
+.form_resa div label {
+    width:20vw;
+    padding: 10px 0 2px;
+}
+
+.form_resa .btn-resa {
+    width:100%;
+    justify-content: space-between;
+    margin-top:20px;
+}
+
+.form_resa .btn-resa button {
+    margin:0;
+}
