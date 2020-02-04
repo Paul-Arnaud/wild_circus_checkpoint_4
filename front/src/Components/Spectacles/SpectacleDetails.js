@@ -12,7 +12,7 @@ export default function SpectacleDetails(props) {
 
     const fetchImages = () => {
         axios
-        .get(`/images/spectacle/${props.spectacleDetails.id}`) //liste les commandes
+        .get(`/images/spectacle/${props.spectacleDetails.spectacle_id}`) //liste les commandes
         .then(res => {
           setImages(res.data);
         });

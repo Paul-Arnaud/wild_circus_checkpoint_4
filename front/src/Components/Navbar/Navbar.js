@@ -18,7 +18,7 @@ export default function Navbar() {
            <NavLink to ='/lieu'>
                 <img src={place} alt="circus"/>
            </NavLink>
-           <NavLink to ='/'>
+           <NavLink to ='/gallerie'>
                 <img src={frame} alt="gallerie"/>
            </NavLink>
         </div>
