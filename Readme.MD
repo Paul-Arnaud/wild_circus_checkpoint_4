@@ -44,5 +44,5 @@ run start script in ./back then ./front folders
 npm start
 ```
 
-## MADE BY
+## Made by
 - Paul-Arnaud Lacroix https://github.com/Paul-Arnaud
