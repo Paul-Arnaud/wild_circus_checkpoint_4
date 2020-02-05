@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <AnimatedSwitch
-        atEnter={{ opacity: 0, left: 1000 }}
-        atLeave={{ opacity: 0, left: -1000 }}
+        atEnter={{ opacity: 0, left: 500 }}
+        atLeave={{ opacity: 0, left: -500 }}
         atActive={{ opacity: 1, left: 0 }}
         className="switch-wrapper"
       >
