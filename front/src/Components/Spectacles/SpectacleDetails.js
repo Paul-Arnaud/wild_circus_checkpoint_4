@@ -8,7 +8,15 @@ export default function SpectacleDetails(props) {
 
     useEffect(() => {
         fetchImages();
+        transition();
     }, [])
+
+
+    const transition = () => {
+       const details = document.getElementById('details');
+       details.classList.add("open")
+    //    setTimeout(()  => {details.style.filter = 'opacity(1)'}, 2000)
+    }
 
     const fetchImages = () => {
         axios
@@ -32,6 +40,10 @@ export default function SpectacleDetails(props) {
             popup.style.display = "none";
             over.style.display = "none";
         }
+        over.classList.add("open")
+        setTimeout(()  => {over.classList.remove("open")}, 1100)
+        popup.classList.add("open")
+        setTimeout(()  => {popup.classList.remove("open")}, 1100)
     }
 
     const showImage = (id) => {
@@ -48,15 +60,20 @@ export default function SpectacleDetails(props) {
             popup.style.display = "none";
             over.style.display = "none";
         }
+        over.classList.add("open")
+        setTimeout(()  => {over.classList.remove("open")}, 1100)
+        popup.classList.add("open")
+        setTimeout(()  => {popup.classList.remove("open")}, 1100)
     }
 
     return (
-        <div className='details'>
+        <div className='details' id="details">
             <h1>{props.spectacleDetails.titre}</h1>
             <div className="cover-image">
              <img  src={props.spectacleDetails.img_url} alt={props.spectacleDetails.img_url} />
             </div>
             <div className="spectacle_description">
+                <p className="return_link"  onClick={props.onClick}>{`Retour à la liste des spectacles`}</p>
                 <b>A propos de <i>{props.spectacleDetails.titre}</i> :</b>
                 <p>
                     {props.spectacleDetails.description}
@@ -79,7 +96,7 @@ export default function SpectacleDetails(props) {
                     )}
                 )}
             </div>
-
+            <p className="return_link"  onClick={props.onClick}>{`Retour à la liste des spectacles`}</p>
             <div id="over" onClick={handlePopup}></div>
             <div id="popup_resa"> 
                     <Reservation datas={props.spectacleDetails} handlePopup={handlePopup}/>

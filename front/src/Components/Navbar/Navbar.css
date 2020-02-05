@@ -4,11 +4,47 @@
   bottom: 0;
   width: 100vw;
   justify-content: space-around;
-  background-color: #F76C6C;
-  padding:15px 0;
+  background-color: #f76c6c;
+  padding: 15px 0;
+}
+
+.navbar a {
+  display: flex;
+  justify-content: center;
 }
 
 .navbar img {
-    width: 35px;
-   filter:invert();
+  width: 35px;
+  filter: invert();
+}
+
+.navbar img:hover {
+  animation: anim 2s infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: -30%;
+  background-color: #ffffffe0;
+  padding: 5px;
+  color: #ff7676;
+  border-radius: 5px;
+  border: 1px solid;
+  display:none;
+}
+
+.navbar a:hover > .tooltip{ 
+  display:block;
 }

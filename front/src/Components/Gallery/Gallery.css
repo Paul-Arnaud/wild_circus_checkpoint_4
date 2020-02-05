@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .Gallery img {
@@ -20,7 +21,7 @@
 .Gallery::after {
   content: "";
   display: flex;
-  width: 45%;
+  width: 50%;
 }
 
 .over_img {
@@ -37,22 +38,22 @@
 }
 
 .popup_img {
-  margin: 0;
-  position: fixed;
-  width: 90vw;
-  z-index: 2;
-  top: 20vh;
-  display: none;
+    width: 90vw;
+    z-index: 2;
+    top: 20vh;
 }
 
 .popup_img img {
-  width: 90%;
-  height: auto;
-  margin-left: 5%;
+    height: 40vh;
+    width: 100%;
 }
 
 @media screen and (min-width: 800px) {
     .popup_img {
-        top: 5vh;
+        top: 10vh;
+        width: 80%;
+    }
+    .popup_img img {
+        height: 80vh;
     }
 }

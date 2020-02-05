@@ -1,6 +1,7 @@
 .carousel {
   width: 100vh;
   height: 200px;
+  border-bottom: 2px solid #faa8a8;
 }
 
 

@@ -9,7 +9,6 @@ export default function Spectacles() {
   const [spectaclesDatas, setSpectaclesDatas] = useState([]);
   const [spectacleDetails, setSpectacleDetails] = useState([]);
 
-
   const fetchSpectacles = () => {
     axios
       .get("/spectacles/all") //liste les commandes
@@ -18,23 +17,40 @@ export default function Spectacles() {
       });
   };
 
-  const showDetails = (i) => {
+  const showDetails = i => {
     setSpectacleDetails(spectaclesDatas[i]);
+    if (clickDetails == true) {
+      transition();
+    }
     setClickDetails(!clickDetails);
-  }
+  };
+
+  const transition = () => {
+    const details = document.getElementById('spectacles');
+    details.classList.add("open")
+    setTimeout(()  => {details.classList.remove("open")}, 1100)
+    
+ }
 
   useEffect(() => {
     fetchSpectacles();
+    transition();
   }, []);
 
-
   return (
-    <div className="spectacles">
-        {clickDetails ? 
-         <SpectacleDetails spectacleDetails={spectacleDetails} clickDetails={clickDetails}/>
-            :
-         <SpectaclesList spectaclesDatas={spectaclesDatas} onClick={showDetails}/>
-    }
+    <div className="spectacles" id="spectacles">
+      {clickDetails ? (
+        <SpectacleDetails
+          spectacleDetails={spectacleDetails}
+          clickDetails={clickDetails}
+          onClick={showDetails}
+        />
+      ) : (
+        <SpectaclesList
+          spectaclesDatas={spectaclesDatas}
+          onClick={showDetails}
+        />
+      )}
     </div>
   );
 }

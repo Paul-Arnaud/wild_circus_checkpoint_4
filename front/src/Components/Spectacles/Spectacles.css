@@ -1,8 +1,6 @@
-.spectacles,
-.details {
+.spectacles {
   margin-bottom: 100px;
 }
-
 .spectacle-card {
   display: flex;
   flex-direction: column;
@@ -21,6 +19,31 @@
   height: auto;
   width: 90vw;
   padding: 20px 0 0;
+  /* filter: opacity(0); */
+}
+
+.return_link {
+  margin-left: 0;
+  color: #f76c6c;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.return_link::before {
+  content: "<< "
+}
+
+.open {
+  animation: animate 1s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .details h2 {
@@ -136,42 +159,58 @@
   margin: 5px 0;
 }
 
-#over, .over_img{
+#over,
+.over_img {
   margin: 0;
-  position:fixed;
-  width:100vw;
-  z-index:2;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color:#00000082;
-  display:none;
-}
-
-#popup_resa, .popup_img{
-  margin: 0;
-  position:fixed;
-  width:90vw;
-  z-index:2;
-  top:20vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000082;
   display: none;
 }
 
-.details .spectacles_images .popup_img img{
-  width:90%;
-  height:auto;
+#popup_resa,
+.popup_img {
+  width: 90vw;
+  z-index: 2;
+  top: 20vh;
+  display: none;
+  position:fixed;
 }
 
-@media screen and (min-width:800px) {
+.details .spectacles_images .popup_img img {
+  height: 40vh;
+  width: 100%;
+}
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
   .details .cover-image img {
-    width:60%;
+    width: 60%;
     max-height: 30vw;
   }
   .spectacle-card .img-div img {
-    width:60%;
+    width: 60%;
   }
-  .details .spectacles_images img { 
-    width:15%;
+  .details .spectacles_images img {
+    width: 15%;
   }
+  .details .spectacles_images .popup_img {
+    top: 10vh;
+    width: 80%;
+  }
+  .details .spectacles_images .popup_img img {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
 }

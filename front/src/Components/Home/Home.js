@@ -5,6 +5,7 @@ import slider1 from "../../img/slider-circus1.jpg";
 import slider2 from "../../img/slider-circus2.jpg";
 import slider3 from "../../img/slider-circus3.jpg";
 import "./Home.css";
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -42,9 +43,9 @@ export default function Home() {
           <br />
           <br />
         </p>
-        <a href="/spectacles">
+        <NavLink to="/spectacles">
           <button className="btn-primary">voir nos spectacles</button>
-        </a>
+        </NavLink>
       </div>
     </div>
   );

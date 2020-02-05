@@ -23,7 +23,7 @@ export default function SpectaclesList(props) {
                     <p>
                       {datas.description.substring(0,400)}[…]
                     </p>
-                      <button className="btn-primary" onClick={() => props.onClick(i)}>lire la suite</button>
+                      <button className="btn-primary" onClick={()=> props.onClick(i)}>lire la suite</button>
                   </div>
                  
                 </div>
