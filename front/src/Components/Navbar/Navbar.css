@@ -18,7 +18,7 @@
   filter: invert();
 }
 
-.navbar img:hover {
+.navbar a:hover > img{
   animation: anim 2s infinite;
 }
 
@@ -36,7 +36,7 @@
 
 .tooltip {
   position: absolute;
-  top: -30%;
+  top: -45%;
   background-color: #ffffffe0;
   padding: 5px;
   color: #ff7676;

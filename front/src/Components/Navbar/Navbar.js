@@ -18,7 +18,7 @@ export default function Navbar() {
                 <img src={ticket} alt="spectacles"/>
            </NavLink>
            <NavLink to ='/lieu'>
-               <p class="tooltip">Cirques</p>
+               <p class="tooltip">Plan</p>
                 <img src={place} alt="circus"/>
            </NavLink>
            <NavLink to ='/gallerie'>

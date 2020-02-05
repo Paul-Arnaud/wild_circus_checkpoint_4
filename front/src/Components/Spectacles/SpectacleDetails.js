@@ -65,7 +65,7 @@ export default function SpectacleDetails(props) {
         popup.classList.add("open")
         setTimeout(()  => {popup.classList.remove("open")}, 1100)
     }
-
+    const date = new Date(props.spectacleDetails.dates)
     return (
         <div className='details' id="details">
             <h1>{props.spectacleDetails.titre}</h1>
@@ -82,8 +82,8 @@ export default function SpectacleDetails(props) {
                 <b>Lieu : {props.spectacleDetails.nom}</b>
                 <b>Prix : {props.spectacleDetails.prix} €</b>
                 <b>Addresse : {props.spectacleDetails.rue}, {props.spectacleDetails.ville}, {props.spectacleDetails.pays}</b>
-                <b>Date : {props.spectacleDetails.dates}</b>
-
+                <b>Date : {date.toLocaleDateString()}</b>
+                <b style={props.spectacleDetails.nb_places < 20 ?{color:'red'}: null}>Places restantes : {props.spectacleDetails.nb_places}</b>
             </div>
             <div className="spectacles_images">
                 {images.map( (image, i) => {

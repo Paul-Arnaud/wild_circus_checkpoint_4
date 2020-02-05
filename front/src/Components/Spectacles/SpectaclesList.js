@@ -6,8 +6,9 @@ export default function SpectaclesList(props) {
         <h1>Nos Spectacles</h1>
         {props.spectaclesDatas &&
             props.spectaclesDatas.map((datas, i) => {
+              const date = new Date(datas.dates)
               return (
-                  
+                
                 <div className="spectacle-card" key={i}>
                   <div>
                     <b>{datas.titre}</b>
@@ -18,7 +19,8 @@ export default function SpectaclesList(props) {
                     <b>Lieu : {datas.nom}</b>
                     <b>Prix : {datas.prix} €</b>
                     <b>Addresse : {datas.rue}, {datas.ville}, {datas.pays}</b>
-                    <b>Date : {datas.dates}</b>
+                    <b>Date : {date.toLocaleDateString()}</b>
+                    <b style={datas.nb_places < 20 ?{color:'red'}: null}>Places restantes : {datas.nb_places}</b>
                     </div>
                     <p>
                       {datas.description.substring(0,400)}[…]

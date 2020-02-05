@@ -28,7 +28,11 @@
 
 .map div .marker-text {
   text-align: center;
-  width: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: center;
+  width: 110%;
 }
 
 .map div img {
