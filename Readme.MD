@@ -10,13 +10,11 @@ The site is divided in four screens :
  - The 'Gallery' screen where you can see photos of the performances.  
 
 ---- screnshots ----
-<img src="./screenshots/home.png" alt="Home" width="50%"/>
-
-<!-- ![Home](https://github.com/Paul-Arnaud/wild_circus_checkpoint_4/blob/dev/screenshots/home.png?s=500)
-![Performances](https://github.com/Paul-Arnaud/wild_circus_checkpoint_4/blob/dev/screenshots/performances.png?s=500)
-![Reservations](https://github.com/Paul-Arnaud/wild_circus_checkpoint_4/blob/dev/screenshots/resa.png?s=500)
-![Map](https://github.com/Paul-Arnaud/wild_circus_checkpoint_4/blob/dev/screenshots/map.png?s=500)
-![Gallery](https://github.com/Paul-Arnaud/wild_circus_checkpoint_4/blob/dev/screenshots/gallery.png?s=500) -->
+<img src="./screenshots/home.png" alt="Home" width="40%"/>
+<img src="./screenshots/performances.png" alt="Performances" width="40%"/>
+<img src="./screenshots/resa.png" alt="Reservations" width="40%"/>
+<img src="./screenshots/map.png" alt="Map" width="40%"/>
+<img src="./screenshots/gallery.png" alt="Gallery" width="40%"/>
 ----
 
 ## Technologies used 
