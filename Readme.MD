@@ -11,7 +11,9 @@ The site is divided in four screens :
 
 ## ---- screnshots ----
 
-<img src="./screenshots/home.png" alt="Home" style="margin-right:5%;border:1px solid black" width="40%"/><img src="./screenshots/performances.png" alt="Performances" style="margin-right:5%;border:1px solid black" width="40%"/><img src="./screenshots/resa.png" alt="Reservations" style="margin-right:5%;border:1px solid black" width="40%"/><img src="./screenshots/map.png" alt="Map" style="margin-right:5%;border:1px solid black" width="40%"/><img src="./screenshots/gallery.png" alt="Gallery" width="40%"/>
+<img src="./screenshots/home.png" alt="Home" width="45%"/><img src="./screenshots/performances.png" alt="Performances" width="45%"/>
+<img src="./screenshots/resa.png" alt="Reservations" width="45%"/><img src="./screenshots/map.png" alt="Map" width="45%"/>
+<img src="./screenshots/gallery.png" alt="Gallery" width="45%"/>
 
 ## ----
 
