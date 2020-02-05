@@ -59,7 +59,7 @@ export default function Map() {
                 });
               }}
             >
-              {lieu.ville}
+              {lieu.ville} ({lieu.pays})
             </option>
           ))}
       </select>

@@ -23,24 +23,22 @@ export default function Home() {
       </Carousel>
       <div className="content">
         <h1>Bienvenue au Wild Circus!</h1>
-        <h2>Qu'est ce que le Wild Circus?</h2>
+        <h2>Qu'est-ce que le Wild Circus?</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-          aspernatur? Harum unde a laborum provident, dicta ipsam magnam
-          recusandae voluptatem. Impedit suscipit ad ipsa, omnis illum magnam ab
-          eligendi sapiente! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Eum, aspernatur? Harum unde a laborum provident, dicta ipsam
-          magnam recusandae voluptatem. Impedit suscipit ad ipsa, omnis illum
-          magnam ab eligendi sapiente!
+          Wild Circus est un tout nouveau type de cirque où les numéros de nos artistes sont sublimés par la technologie. <br/>
+      
+          Chaques année nous parcourons le monde à la recherche de nouveaux artistes de talent et d'incroyables numéros.
+          <br/>
+          Le premier Wild Circus a été ouvert en 2014 dans la petite ville française de <i>La Loupe</i> et a très vite rencontré un tel succès que nous somme maintenant implanté dans toute la France et depuis dans plusieurs pays d'Europe.
         </p>
 
         <h2>Nos spectacles</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-          aspernatur? Harum unde a laborum provident, dicta ipsam magnam
-          recusandae voluptatem. Impedit suscipit ad ipsa, omnis illum magnam ab
-          eligendi sapiente!
-          <br />
+        Nous sommes certains qu'en utilisant des nouvelles technologies tels que des hologrammes dans nos spectacles nous pouvons les rendre encore meilleurs.
+          <br/><br/>
+        <b>Parmi nos spectacles les plus populaires vous retrouverez notamment :</b> <br/>
+        - <i>Les animaux virtuels</i> : spectacle d'hologrammes mettant en scène des animaux exotiques<br/>
+        - <i>Jonglage sauvage</i> : Un numéro de jonglage haut en couleur <br/>
           <br />
         </p>
         <NavLink to="/spectacles">

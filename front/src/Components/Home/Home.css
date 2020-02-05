@@ -12,6 +12,10 @@
   flex-direction: column;
 }
 
+.content p {
+  margin-left:0;
+}
+
 .content button {
   margin: 0;
 }
