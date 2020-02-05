@@ -10,11 +10,13 @@ The site is divided in four screens :
  - The 'Gallery' screen where you can see photos of the performances.  
 
 ---- screnshots ----
+
 <img src="./screenshots/home.png" alt="Home" width="40%"/>
 <img src="./screenshots/performances.png" alt="Performances" width="40%"/>
 <img src="./screenshots/resa.png" alt="Reservations" width="40%"/>
 <img src="./screenshots/map.png" alt="Map" width="40%"/>
 <img src="./screenshots/gallery.png" alt="Gallery" width="40%"/>
+
 ----
 
 ## Technologies used 
