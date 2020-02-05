@@ -20,6 +20,10 @@
   box-shadow: none;
 }
 
+.carousel button:hover {
+  animation: none;
+}
+
 h1 {
   margin: 10px ;
   font-size: 26px;
