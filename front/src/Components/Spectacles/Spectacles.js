@@ -4,7 +4,7 @@ import SpectacleDetails from "./SpectacleDetails";
 import SpectaclesList from "./SpectaclesList";
 import "./Spectacles.css";
 
-export default function Spectacles() {
+export default function Spectacles(props) {
   const [clickDetails, setClickDetails] = useState(false);
   const [spectaclesDatas, setSpectaclesDatas] = useState([]);
   const [spectacleDetails, setSpectacleDetails] = useState([]);

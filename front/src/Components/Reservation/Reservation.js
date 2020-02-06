@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Reservation.css";
 
 export default function Reservation(props) {
-  const [newResa, setNewResa] = useState({spectacle_id: props.datas.id, nb_places: 1})
+  const [newResa, setNewResa] = useState({spectacle_id: props.datas.spectacle_id, nb_places: 1})
 
 
   const validateNewResa = (e) => {
@@ -20,8 +20,10 @@ export default function Reservation(props) {
         } else {
           alert(`La réservation pour ${newResa.prenom} ${newResa.nom} a été enregistrée avec succès!`);
           props.handlePopup(e);
+          window.location.reload();
         }
       });
+
   };
 
   return (
@@ -30,8 +32,8 @@ export default function Reservation(props) {
       <form className="form_resa">
         <div>
           <label htmlFor="spectacle_id">Spectacle :</label>
-          <select name="spectale_id" onChange={validateNewResa}>
-            <option value={props.datas.id}>
+          <select name="spectacle_id" onChange={validateNewResa}>
+            <option value={props.datas.spectacle_id}>
               {props.datas.titre} {props.datas.dates}
             </option>
           </select>
