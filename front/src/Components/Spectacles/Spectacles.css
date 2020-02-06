@@ -101,6 +101,7 @@
   border-radius: 10px;
   box-shadow: 4px 4px #f99797d4;
   border: 1px solid #f76c6c;
+  object-fit: cover;
 }
 
 .details .spectacles_images::after {
@@ -131,9 +132,13 @@
   width: 90%;
 }
 
-.spectacle-card div button {
-  margin: 10px 0;
+.spectacle-card button {
+  margin: 10px auto 20px;
   align-self: flex-end;
+}
+
+.spectacle-card .info_spectacle_description {
+  height:120px;
 }
 
 .spectacle-card .img-div img {
@@ -143,6 +148,7 @@
   border-radius: 5px;
   box-shadow: 4px 4px #f99797d4;
   border: 1px solid #f76c6c;
+  object-fit: cover;
 }
 
 .align-right {
@@ -191,6 +197,7 @@
 .details .spectacles_images .popup_img img {
   height: 40vh;
   width: 100%;
+  object-fit: fill;
 }
 button a {
   color: white;
@@ -212,7 +219,6 @@ button a {
   }
   .details .spectacles_images img {
     width: 30%;
-    /* height: 80px; */
   }
   .details .spectacles_images .popup_img {
     top: 10vh;
@@ -237,7 +243,9 @@ button a {
   .spectacle-card .info_spectacle {
     text-align: left;
   }
+
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
+
 }

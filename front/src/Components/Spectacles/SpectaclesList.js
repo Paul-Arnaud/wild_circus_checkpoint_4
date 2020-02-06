@@ -22,12 +22,11 @@ export default function SpectaclesList(props) {
                     <b>Date : {date.toLocaleDateString()}</b>
                     <b style={datas.nb_places < 20 ?{color:'red'}: null}>Places restantes : {datas.nb_places}</b>
                     </div>
-                    <p>
-                      {datas.description.substring(0,400)}[…]
+                    <p className="info_spectacle_description">
+                      {datas.description.substring(0,200)}[…]
                     </p>
-                      <button className="btn-primary" onClick={()=> props.onClick(i)}>lire la suite</button>
                   </div>
-                 
+                  <button className="btn-primary" onClick={()=> props.onClick(i)}>lire la suite</button>
                 </div>
               )
             })}

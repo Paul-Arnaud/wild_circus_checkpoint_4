@@ -16,6 +16,7 @@
   border-radius: 10px;
   box-shadow: 4px 4px #f99797d4;
   border: 1px solid #f76c6c;
+  object-fit: cover;
 }
 
 .Gallery::after {
@@ -46,6 +47,7 @@
 .popup_img img {
     height: 40vh;
     width: 100%;
+    object-fit:fill
 }
 
 .open {
