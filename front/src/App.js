@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";

@@ -45,7 +45,7 @@ export default function Gallery() {
                 {images.map( (image, i) => {
                     return(
                         <>
-                        {(i%6==0 || i%7==0) && i != 0 ? <img className="large-img" src={image.url} alt={image.alt} onClick={() => {showImage(i)}}/> : <img src={image.url} alt={image.alt} onClick={() => {showImage(i)}}/>}
+                        {(i%6===0 || i%7===0) && i !== 0 ? <img className="large-img" src={image.url} alt={image.alt} onClick={() => {showImage(i)}}/> : <img src={image.url} alt={image.alt} onClick={() => {showImage(i)}}/>}
                         <div id={`over_img${i}`} className="over_img" onClick={() => {showImage(i)}}></div>
                         <div id={`popup_img${i}`} className="popup_img"> <img className="image_fullscreen" src={image.url} alt={image.alt}/> </div>
                         </>

@@ -88,7 +88,7 @@ export default function Map() {
                     setThePopup(lieu);
                   }}
                 >
-                  <img src={wild} style={{ width: "30px" }} /><br/>
+                  <img src={wild} alt={lieu.name} style={{ width: "30px" }} /><br/>
                   <p>{lieu.nom}</p>
                 </div>
               </Marker>

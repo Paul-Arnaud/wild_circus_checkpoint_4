@@ -19,7 +19,7 @@ export default function Spectacles(props) {
 
   const showDetails = i => {
     setSpectacleDetails(spectaclesDatas[i]);
-    if (clickDetails == true) {
+    if (clickDetails === true) {
       transition();
     }
     setClickDetails(!clickDetails);

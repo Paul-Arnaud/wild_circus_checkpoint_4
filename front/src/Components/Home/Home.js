@@ -1,9 +1,6 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import slider1 from "../../img/slider-circus1.jpg";
-import slider2 from "../../img/slider-circus2.jpg";
-import slider3 from "../../img/slider-circus3.jpg";
 import "./Home.css";
 import { NavLink } from 'react-router-dom';
 
